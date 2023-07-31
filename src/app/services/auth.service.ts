@@ -16,7 +16,7 @@ export class AuthService {
     private router: Router) { }
 
   createUser(email: string, password: string) {
-    return this.http.post<{ message: string }>('http://localhost:3000/api/auth/signup', { email: email, password: password });
+    return this.http.post<{ message: string }>('https://julienjamet-hottakes.onrender.com/api/auth/signup', { email: email, password: password });
   }
 
   getToken() {
@@ -28,7 +28,7 @@ export class AuthService {
   }
 
   loginUser(email: string, password: string) {
-    return this.http.post<{ message: string, token: string }>('http://localhost:3000/api/auth/login', { email: email, password: password }).pipe(
+    return this.http.post<{ message: string, token: string }>('https://julienjamet-hottakes.onrender.com/api/auth/login', { email: email, password: password }).pipe(
       tap(({ message, token }) => {
         this.email = message.split("'")[1].split("'")[0];
         this.authToken = token;

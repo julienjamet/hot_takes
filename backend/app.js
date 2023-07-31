@@ -22,7 +22,7 @@ const sauceRoutes = require('./routes/sauce'); /*Appelle le routeur "Sauce"*/
 app.use(helmet({ crossOriginResourcePolicy: false })) /*Utilise Helmet pour protéger l'application des attaques courantes*/
 /*-------------------------------------------------------------------------------------------------------------------*/
 app.use((req, res, next) => { /*Autorise tous les accès vers l'application*/
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', 'https://julienjamet-hottakes.netlify.app');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     next();
