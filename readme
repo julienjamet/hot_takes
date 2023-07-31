@@ -1,0 +1,43 @@
+This project has been made during my dev training (MongoDB / Express / Node).
+
+I created the whole [./backend] folder.
+
+My purpose was to build a secure API connected to a database to make the app functional.
+
+The deployed version of the site can be visited by clicking on the link located in the About section (connecting to the API may take a few seconds).
+
+Note that my hosting platform regularly deletes uploaded images.
+
+That is why all the sauces already created by others will show you the same funny picture I hid under each uploaded image.
+
+If you create your own sauce, you will see your uploaded image and everything will seem to work perfectly for you.
+
+But if come back after a while, your image will also have been deleted and replaced by the same default image as the others.
+
+You will be able to reupload it as many times as you want, but in the end, my host will always win this game.
+
+You can access the code of the deployed version by switching to the other branch.
+
+To run the app locally, you will need to have Node and npm installed on your machine.
+
+Then please follow these instructions :
+
+- Create a MongoDB database and make sure you have admin access
+
+- Clone the repository
+
+- Copy/paste the [./backend/.env.example] file
+
+- Rename the newly created `.env copy.example` file to `.env`
+
+- Insert your MongoDB connection string into the `.env` file (don't forget to include your password)
+
+- From the [./backend] folder, run `npm install` then `npm start`
+
+- Your console should now be indicating `Listening on port 3000 - Connected to MongoDB`
+
+- From the [root] folder, run `npm install` then `npm start`
+
+- Navigate to `http://localhost:4200`
+
+- You're done !
